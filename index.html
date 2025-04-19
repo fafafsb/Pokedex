@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pokédex</title>
   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style/pokebox.css" />
+    <link rel="stylesheet" href="./style/pokemon-card.css" />
+  <script src="./script.js"></script>
+  <script src="./script/template.js"></script>
 </head>
-<body>
+<body id="bodyId" onload="init()">
   <header class="pokedex-header">
     <div class="logo">
       <img src="./assets/img/pokedex-logo.png" alt="Pokedex Logo" />
@@ -19,7 +23,22 @@
   </header>
 
   <main>
+    <section>
+        <div id="mainContainer" class="main-container"></div>
+    </section>
+    <!--pokeCard-->
+    <section id="overlay" class="display-none" onclick="closePokeCard()">
+    </section>
+    <!--loadingscreen-->
+    <section id="loadMoreBtn" class="loadMoreContent" >
+        <button onclick="loadMore()">Load more</button>
+    </section>
+    <section id="backBtn" class="loadMoreContent display-none" >
+        <button onclick="backToContent()">back</button>
+    </section>
 
+    <section id="loadingScreen" class=""></section>
+  *
   </main>
 </body>
 </html>
