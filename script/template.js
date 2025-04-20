@@ -4,9 +4,7 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
     : `linear-gradient(to right, var(--${types[0]}), var(--${types[0]}))`;
  
     return `
-    <div onclick="openCard(${i})" class="pokemon-box">
-            <div class="box_headline" style="background: ${gradient};"></div>
-             <div class="pokeimg_bg" style="background: ${gradient};"></div>
+    <div onclick="openCard(${i})" class="pokemon-box" style="background: ${gradient};">
              <img class="pokemon_img" src="${img.front_default}" alt="Pokemon">
               <span class="poke_Name"># ${i +1} ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
        <div id="elementContent${i}" class="element_content"></div>
@@ -31,8 +29,8 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
      <div onclick="event.stopPropagation()" id="pokeCardsContainer" class="poke_cards_box">
     <img onclick="slideButton(-1)" class="back_file hover" src="./assets/icon/back_icon.png" alt="back">
        
-       <div class="poke_cards">
-          
+       <div class="poke-cards">
+
           <div class="poke_name">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</div>
           
           <div class="card_nav ${type.name}_element">  
@@ -53,7 +51,7 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
              <div class="span_content_title">
                 <span class="span_text">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
                 <span class="span_text">${pokedexIndexArr.height}0 cm</span>
-                <span class="span_text">${pokedexIndexArr.weight}00 g</span>
+                <span class="span_text">${pokedexIndexArr.weight}kg</span>
                 <span id="abilitiesSpan${i}" class="span_text"></span>
              </div>
           </div>
@@ -75,10 +73,10 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
  
           </div>
  
-             <img class="poke_icon" src="./assets/icon/${type.name}_icon.png">
+             
              <img class="poke_character" src="${pokeImg.front_default}" alt="Pokemon">
           </div>
- 
+        
        <img onclick="slideButton(1)" class="next_file hover" src="./assets/icon/next_icon.png" alt="next">
  
        <div id="elements_type${i}" class="cards_content"></div>
