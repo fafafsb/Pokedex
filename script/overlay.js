@@ -134,6 +134,13 @@ async function openCard(i) {
        movesBox.innerHTML += getMovesTemplate(move);
        });
  }
+ function renderOpenAbilities() {
+   let contentBox3 = document.getElementById('content_box3');
+
+   pokeIndexArr.abilities.forEach(abilities=> {
+      contentBox3.innerHTML += getMovesTemplate(abilities);
+      });
+}
  
  function navContentID() {
     return {

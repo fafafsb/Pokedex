@@ -17,7 +17,7 @@
  }
  
  .loadingProgressbar{
-    width: 300px;
+    width: 306px;
     height: 20px;
     border:5px solid #b68603;
     border-radius: 10px; 
@@ -32,6 +32,6 @@
  }
  
  .rotation{
- transition: all 0.65s;
+ transition: all 0.1s;
  transform: rotateY(360deg);
  }

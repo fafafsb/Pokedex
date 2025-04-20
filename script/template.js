@@ -5,8 +5,8 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
  
     return `
     <div onclick="openCard(${i})" class="pokemon-box" style="background: ${gradient};">
-             <img class="pokemon_img" src="${img.front_default}" alt="Pokemon">
-              <span class="poke_Name"># ${i +1} ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
+               <img class="pokemon_img" src="${img.front_default}" alt="Pokemon">
+               <span class="poke_Name"># ${i +1} ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</span>
        <div id="elementContent${i}" class="element_content"></div>
               
     </div>`
@@ -27,9 +27,9 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
  function getPokeCardTemplate(i, pokemon, pokeImg, pokedexIndexArr, type){
     return `
      <div onclick="event.stopPropagation()" id="pokeCardsContainer" class="poke_cards_box">
-    <img onclick="slideButton(-1)" class="back_file hover" src="./assets/icon/back_icon.png" alt="back">
+    <img onclick="slideButton(-1)" class="back_file hover" src="./assets/icon/back_icon.png" alt="back" >
        
-       <div class="poke-cards">
+       <div class="poke_cards">
 
           <div class="poke_name">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</div>
           
@@ -114,7 +114,7 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
        <p>LOADING ...</p>
        <div class="loadingProgressbar">
        <div id="loadingProgressbar" style="width: 0;  background-color: #b68603;"></div>
-       <img class="load_img" style="transition: 0;"src="./assets/loading_img.png" alt="POKEMON">
+       <img class="load_img" style="transition: 0;"src="./assets/img/loading-img.png" alt="POKEBALL">
        </div>
     </div>
  `

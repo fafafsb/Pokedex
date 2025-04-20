@@ -69,6 +69,7 @@ function closeLoadingScreen() {
     let loadingScreenRef = document.getElementById('loadingScreen');
     loadingScreenRef.classList.remove('load_screen');
     document.getElementById('bodyId').style.overflow = "auto";
+    loadingScreenRef.innerHTML = '';
 }
 
 async function getSearchValue(){
