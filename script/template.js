@@ -29,7 +29,7 @@ function  getPokedexTemplate(pokemon, i, img, type, types){
      <div onclick="event.stopPropagation()" id="pokeCardsContainer" class="poke_cards_box">
     <img onclick="slideButton(-1)" class="back_file hover" src="./assets/icon/back_icon.png" alt="back" >
        
-       <div class="poke_cards">
+       <div class="poke_cards" style="background: var(--${type.name})">
 
           <div class="poke_name">${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</div>
           

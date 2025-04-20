@@ -51,24 +51,21 @@
   }
   
   :root {
-     --grass: rgba(70, 160, 131, 0.65);
-     --water: rgba(61, 88, 128, 0.65);
-     --fire: rgba(253, 68, 68, 0.65);
-     --bug: rgba(157, 197, 10, 0.65);
-     --normal: rgba(156, 62, 18, 0.65);
-     --flying: rgba(156, 208, 243, 0.65);
-     --poison: rgba(60, 56, 77, 0.65);
-     --ground: #814c07af;
-     --fairy: #fca0afaf;
-     --fighting: #6b4f02af;
-     --psychic:#c99301af;
-     --rock: #c99301af;
-     --ice:#92dde2af;
-     --electric:#fa9006af;
-     --ghost:  #272623af;
-     --dragon:#94af56af;
-     --dark: #181817af;
-     --steel : #929c9aaf;
+     --grass: 	#46a083;
+     --water: 	#5a8ad1;
+     --fire: 	#e46565;
+     --bug: 	#9dc50a;
+     --normal: 	#b1b0af;
+     --flying: 	#9cd0f3;
+     --poison: 	#9358a5;
+     --ground: #af772d;
+     --fighting: #ce822b;
+     --psychic:#b05cd1;
+     --rock: #ac8415;
+     --ice:#92dde2;
+     --electric:#fde71f;
+     --ghost:  #3e035a;
+     --dragon:#a09e2e;
   }
   
 

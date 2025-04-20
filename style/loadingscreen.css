@@ -29,9 +29,7 @@
  .load_img{
     width: 70px;
     padding-top: 20px;
+    transition: all 250ms;
+    transform: rotateY(360deg);
  }
  
- .rotation{
- transition: all 0.1s;
- transform: rotateY(360deg);
- }

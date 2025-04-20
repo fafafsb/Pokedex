@@ -21,7 +21,7 @@
  .poke_cards {
    width: 320px;
    height: 430px;
-   background-color: #09287cbb;
+   background-color: #706f6f;
    border-radius: 10px;
    border: 15px solid #c4b700;
  }
@@ -107,20 +107,23 @@
  }
  
  .close_btn{
-   width: 40px;
-   height: 40px;
-   color: #222;
-   font-weight: 900;
-   font-size: 50px;
-   cursor: pointer;
-   position: relative;
-   bottom: 50px; 
-   right: -5px;
+    width: 40px;
+    height: 40px;
+    color: #000000;
+    font-weight: 900;
+    font-size: 64px;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    right: 5px;
+    font-family: sans-serif;
  }
  
  .close_btn:hover{
-   color: #b30606;
-   transition: all 225ms;
+    color: #b30606;
+    transition: all 250ms;
+    filter: drop-shadow(2px 2px 5px #000000);
+    transform: rotateY(360deg);
  }
  
  .cards_content {
@@ -160,7 +163,7 @@
     flex-direction: row;
     gap: 20px;
     position: relative;
-    top: 26px;
+    top: 28px;
  }
  .span_content_title {
    display: flex;
