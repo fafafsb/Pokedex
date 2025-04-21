@@ -61,3 +61,25 @@ body {
     background-color: #ffd3d3;
   }
   
+.loadMoreContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.loadMoreContent button {
+    background-color: #c09d00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 22px;
+    width: 152px;
+    height: 44px;
+    margin: 12px;
+  }
+
+  .loadMoreContent button:hover {
+    background-color: #5a5a5a;
+  }
