@@ -83,3 +83,34 @@ body {
   .loadMoreContent button:hover {
     background-color: #5a5a5a;
   }
+
+  @media (max-width:650px) {
+    .logo img {
+        width: 100%;
+        height: 24px;
+      }
+
+      .search-form input {
+        font-size: 10px;
+      }
+
+      .search-form button {
+        font-size: 10px;
+      }
+  
+  }
+
+  @media (max-width:500px) {
+    .logo img {
+      width: auto;
+      height: 22px;
+      margin-bottom: 12px;
+      }
+
+      .pokedex-header {
+        padding: 24px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
